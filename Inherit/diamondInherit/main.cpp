@@ -45,7 +45,6 @@ public:
 int main()
 {
     undergraduate ug;
-
     int length = sizeof(ug);
 
     cout << "length:" << length << endl;
