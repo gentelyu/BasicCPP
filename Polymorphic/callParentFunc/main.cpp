@@ -14,7 +14,7 @@ public:
     }
 
     /* 析构 */
-    ~Person()
+    virtual~Person()
     {
         cout << "~Person()" << endl;  
     }
@@ -61,6 +61,9 @@ int main()
 
     Person * per = new Student;
     per->makeMoney();
+
+    // 释放内存
+    delete per;
 
     return 0;
 }
